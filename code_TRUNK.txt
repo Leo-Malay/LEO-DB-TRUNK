@@ -1,0 +1,28 @@
+# Start by importing the module.(Place the file in same folder!)
+import LEO_DB_TRUNK as ldbt
+
+# Create an Instance/Object.
+db = ldbt.leodb("Name_of_database_else_empty","Path_else_empty")
+
+# Select table (If table doesn't exists then it will create one it self!)
+db.table("Name_table")
+# Pass column list if adding new table.
+db.table("Name_table",["col_name1","col_name2"])
+
+# Insert Record. (if you dont pass value and col_name...it will be null)
+db.insert(["col_name1=value1","col_name2=value2",..])
+
+# Search Record.
+db.search(["col_name1=value1","col_name2=value2",..])
+
+# Edit Record.(1st list for searching && 2nd list contains new value of specific column)
+db.update(["col_name1=value1","col_name2=value2",..] , ["col_name1=value1","col_name2=value2",..])
+
+# Delete Record. (search from list and delete all match)
+db.delete(["col_name1=value1","col_name2=value2",..])
+
+# Always remember to close before ending! (Or data operation wont save.)
+db.close()
+
+# Export To CSV.(After selecting table)(File with table name will be created!)
+db.export_()
