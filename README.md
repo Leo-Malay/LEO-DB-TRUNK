@@ -1,4 +1,4 @@
-# LEO-DB - A Python based database software
+# LEO-DB - A Python based database software(NoSQL DB)
 
 -> Hello, I am Malay Bhavsar. I have developed a database software entirely written in pure Python.<br/><br/>
 -> It all started back on 7th September 2020, when I started learning about database. I didn't quiet undestood it. So I came up with a solution that why don't I make a database software of my own! Which can help me understand and learn together.<br/><br/>
